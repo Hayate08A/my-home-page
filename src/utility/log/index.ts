@@ -1,0 +1,1 @@
+export { consoleLog } from "./consoleLog";

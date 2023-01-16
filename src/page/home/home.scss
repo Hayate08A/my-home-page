@@ -1,0 +1,21 @@
+@import "../../common/index.scss";
+
+.home {
+  outline: solid blue 2px;
+  @include flex_box;
+  flex-direction: column;
+  &__lists_wrap {
+    @include flex_box;
+    @include flex_align_center;
+    @include flex_content_center;
+    flex: 1;
+    &.responsive {
+      @media (max-width:$bpTB) {
+        background: $commonColorBG;
+        flex-direction: column;
+      }
+    }
+    > .list {
+    }
+  }
+}

@@ -1,0 +1,20 @@
+//フォントカラー設定
+$commonColorFont: #333333;
+
+// 背景色の設定
+$commonColorBG: #84ef9e;
+
+$commonFont: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif !important;
+
+$bpSP: '600px';
+$bpTB: '1025px';
+$bpPC: '';
+$breakpoints: (
+  //320px~767px（スマホサイズ）
+  "sp": "screen and (max-width: 767px)",
+  //画面サイズが991pxまでの場合、styleを適用
+  "tablet": "screen and (max-width: 991px)",
+  //画面サイズが1199pxまでの場合、styleを適用
+  "pc": "screen and (max-width: px)"
+) !default;

@@ -1,0 +1,12 @@
+@import "../../../common/index.scss";
+
+.header {
+  @include flex_box();
+  @include flex_space_between();
+  background-color: $commonColorBG;
+  padding: 0.5em 1em;
+  &__menu {
+    @include flex_box();
+    gap: 1em;
+  }
+}

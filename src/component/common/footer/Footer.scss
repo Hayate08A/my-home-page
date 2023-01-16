@@ -1,0 +1,13 @@
+@import "../../../common/index.scss";
+
+.footer {
+  @include flex_box();
+  @include flex_content_center();
+  background-color: $commonColorBG;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  &__menu {
+    @include flex_box();
+    gap: 1em;
+  }
+}

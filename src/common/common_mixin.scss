@@ -1,0 +1,100 @@
+@mixin flex_box() {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex_align_baseline() {
+  align-items: baseline;
+}
+
+@mixin flex_align_start() {
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@mixin flex_align_stretch() {
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+@mixin flex_align_start() {
+  -webkit-align-items: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+@mixin flex_align_center() {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@mixin flex_align_end() {
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@mixin flex_space_between() {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@mixin flex_content_start() {
+  -webkit-justify-content: start;
+  justify-content: start;
+  -ms-flex-pack: start;
+}
+
+@mixin flex_content_center() {
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+@mixin flex_content_end() {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+}
+
+@mixin flex_content_around() {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+}
+
+@mixin flex_container_wrap() {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+
+@mixin flex_direction_column() {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+@mixin three_point_reader_outer() {
+  overflow: hidden;
+  width: 100%;
+}
+
+@mixin three_point_reader_inner() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+//複数行の3点リーダー
+@mixin three_point_reader_inner_line($num: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+  overflow: hidden;
+}
