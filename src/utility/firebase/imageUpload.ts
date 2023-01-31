@@ -1,7 +1,6 @@
 import { storage } from "../../firebase";
 
 export const imageUpload = (e: any) => {
-  console.log("んうぬぬ");
   if (e.target.files[0]) {
     const randomId = Math.random().toString(32).substring(2);
     const uploadTask = storage

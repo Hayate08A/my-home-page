@@ -9,9 +9,9 @@ const Home = () => {
     <div className="home">
       <button>
         画像アップロード
-        <input type="file" onChange={(e) => utility.imageUpload(e)} />
+        {/* <input type="file" onChange={(e) => utility.imageUpload(e)} /> */}
+        <input id="web-worker" type="file" name="image" accept="image/*" />
       </button>
-      {/* <button onClick={() => utility.consoleLog("test")}>test</button> */}
       <div className="home__lists_wrap responsive">
         {lists.map((title, i) => {
           return (
