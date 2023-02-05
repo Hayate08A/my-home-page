@@ -2,6 +2,7 @@ import axios from "axios";
 import imageCompression from "browser-image-compression";
 
 export const compressImage = (images: any) => {
+  console.log("compressImage");
   const file = images.target.files[0];
   const result = document.getElementById("web-worker-result");
   const progressDom = document.getElementById("web-worker-progress");

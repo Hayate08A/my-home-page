@@ -1,1 +1,1 @@
-export {} from "./weightSaving";
+export * from "./weightSaving";

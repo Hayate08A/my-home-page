@@ -7,11 +7,20 @@ const Home = () => {
   console.log("Home");
   return (
     <div className="home">
-      <button>
+      <form name="fileinfo">
         画像アップロード
         {/* <input type="file" onChange={(e) => utility.imageUpload(e)} /> */}
-        <input id="web-worker" type="file" name="image" accept="image/*" />
-      </button>
+        <input
+          id="web-worker"
+          type="file"
+          name="image"
+          accept="image/*"
+          onChange={(e) => utility.compressImage(e)}
+        />
+        <button type="submit">送信</button>
+        <span id="web-worker-progress"></span>
+        <p id="web-worker-result"></p>
+      </form>
       <div className="home__lists_wrap responsive">
         {lists.map((title, i) => {
           return (
